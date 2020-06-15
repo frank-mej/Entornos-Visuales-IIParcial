@@ -35,10 +35,6 @@ Public Class Form1
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
 
-    Private Sub btnMenu_Click(sender As Object, e As EventArgs) Handles btnMenu.Click
-        timerOcultarMenu.Enabled = True
-    End Sub
-
     Private Sub timerOcultarMenu_Tick(sender As Object, e As EventArgs) Handles timerOcultarMenu.Tick
         If PanelMenu.Width <= 60 Then
             Me.timerOcultarMenu.Enabled = False
@@ -53,5 +49,30 @@ Public Class Form1
         Else
             Me.PanelMenu.Width = PanelMenu.Width + 20
         End If
+    End Sub
+
+    Private Sub btnMenu_Click(sender As Object, e As EventArgs) Handles btnMenu.Click
+        If panelMenu.Width >= 165 Then
+            timerOcultarMenu.Enabled = True
+        ElseIf panelMenu.Width >= 45 Then
+            timerMostrarMenu.Enabled = True
+        End If
+    End Sub
+
+    Private Sub abrirFormulario(ByVal formHijo As Object)
+        If panelForms.Controls.Count > 0 Then
+            Me.panelForms.Controls.RemoveAt(0)
+        End If
+        Dim frm As Form = TryCast(formHijo, Form)
+        frm.TopLevel = False
+        frm.Dock = DockStyle.Fill
+        Me.panelForms.Controls.Add(frm)
+        Me.panelForms.Tag = frm
+        frm.Show()
+
+    End Sub
+
+    Private Sub btnProductos_Click(sender As Object, e As EventArgs) Handles btnProductos.Click
+        abrirFormulario(frmProductos)
     End Sub
 End Class
