@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{60C58578-6E6F-4697-AA37-5041FC3EC8D1}</ProjectGuid>
+    <ProjectGuid>{9AE3B020-3B77-472F-BBE4-F009BA246C88}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Ejercicios_Clase.My.MyApplication</StartupObject>
-    <RootNamespace>Ejercicios_Clase</RootNamespace>
-    <AssemblyName>Ejercicios Clase</AssemblyName>
+    <StartupObject>Ejercicios_Tareas_IIP.My.MyApplication</StartupObject>
+    <RootNamespace>Ejercicios_Tareas_IIP</RootNamespace>
+    <AssemblyName>Ejercicios Tareas IIP</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Ejercicios Clase.xml</DocumentationFile>
+    <DocumentationFile>Ejercicios Tareas IIP.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Ejercicios Clase.xml</DocumentationFile>
+    <DocumentationFile>Ejercicios Tareas IIP.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -73,21 +73,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmProductos.Designer.vb">
-      <DependentUpon>frmProductos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmProductos.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuPersonalizado.Designer.vb">
-      <DependentUpon>MenuPersonalizado.vb</DependentUpon>
-    </Compile>
-    <Compile Include="MenuPersonalizado.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -107,15 +97,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmProductos.resx">
-      <DependentUpon>frmProductos.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuPersonalizado.resx">
-      <DependentUpon>MenuPersonalizado.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
