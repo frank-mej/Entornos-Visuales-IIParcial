@@ -30,16 +30,13 @@ Partial Class Form1
         Me.btnMaximizar = New System.Windows.Forms.PictureBox()
         Me.btnCerrar = New System.Windows.Forms.PictureBox()
         Me.panelMenu = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.btnEmpleados = New System.Windows.Forms.Button()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.btnClientes = New System.Windows.Forms.Button()
         Me.btnMenu = New System.Windows.Forms.PictureBox()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnProductos = New System.Windows.Forms.Button()
         Me.panelForms = New System.Windows.Forms.Panel()
         Me.timerOcultarMenu = New System.Windows.Forms.Timer(Me.components)
         Me.timerMostrarMenu = New System.Windows.Forms.Timer(Me.components)
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.panelSuperior.SuspendLayout()
         CType(Me.btnRestaurar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnMinimizar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -114,84 +111,25 @@ Partial Class Form1
         'panelMenu
         '
         Me.panelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.panelMenu.Controls.Add(Me.Panel3)
-        Me.panelMenu.Controls.Add(Me.btnEmpleados)
-        Me.panelMenu.Controls.Add(Me.Panel2)
-        Me.panelMenu.Controls.Add(Me.btnClientes)
+        Me.panelMenu.Controls.Add(Me.Button2)
+        Me.panelMenu.Controls.Add(Me.Button1)
         Me.panelMenu.Controls.Add(Me.btnMenu)
-        Me.panelMenu.Controls.Add(Me.Panel1)
         Me.panelMenu.Controls.Add(Me.btnProductos)
         Me.panelMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.panelMenu.Location = New System.Drawing.Point(0, 38)
         Me.panelMenu.Name = "panelMenu"
-        Me.panelMenu.Size = New System.Drawing.Size(220, 462)
+        Me.panelMenu.Size = New System.Drawing.Size(165, 462)
         Me.panelMenu.TabIndex = 1
-        '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.Panel3.Location = New System.Drawing.Point(1, 183)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(5, 24)
-        Me.Panel3.TabIndex = 6
-        '
-        'btnEmpleados
-        '
-        Me.btnEmpleados.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnEmpleados.FlatAppearance.BorderSize = 0
-        Me.btnEmpleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEmpleados.ForeColor = System.Drawing.Color.White
-        Me.btnEmpleados.Image = CType(resources.GetObject("btnEmpleados.Image"), System.Drawing.Image)
-        Me.btnEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnEmpleados.Location = New System.Drawing.Point(5, 183)
-        Me.btnEmpleados.Name = "btnEmpleados"
-        Me.btnEmpleados.Size = New System.Drawing.Size(215, 24)
-        Me.btnEmpleados.TabIndex = 5
-        Me.btnEmpleados.Text = "Empleados"
-        Me.btnEmpleados.UseVisualStyleBackColor = True
-        '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.Panel2.Location = New System.Drawing.Point(1, 140)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(5, 24)
-        Me.Panel2.TabIndex = 4
-        '
-        'btnClientes
-        '
-        Me.btnClientes.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnClientes.FlatAppearance.BorderSize = 0
-        Me.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClientes.ForeColor = System.Drawing.Color.White
-        Me.btnClientes.Image = CType(resources.GetObject("btnClientes.Image"), System.Drawing.Image)
-        Me.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnClientes.Location = New System.Drawing.Point(5, 140)
-        Me.btnClientes.Name = "btnClientes"
-        Me.btnClientes.Size = New System.Drawing.Size(215, 24)
-        Me.btnClientes.TabIndex = 3
-        Me.btnClientes.Text = "Clientes"
-        Me.btnClientes.UseVisualStyleBackColor = True
         '
         'btnMenu
         '
         Me.btnMenu.Image = CType(resources.GetObject("btnMenu.Image"), System.Drawing.Image)
-        Me.btnMenu.Location = New System.Drawing.Point(180, 0)
+        Me.btnMenu.Location = New System.Drawing.Point(123, 6)
         Me.btnMenu.Name = "btnMenu"
-        Me.btnMenu.Size = New System.Drawing.Size(40, 40)
+        Me.btnMenu.Size = New System.Drawing.Size(35, 30)
         Me.btnMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.btnMenu.TabIndex = 2
         Me.btnMenu.TabStop = False
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.Panel1.Location = New System.Drawing.Point(0, 95)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(5, 24)
-        Me.Panel1.TabIndex = 1
         '
         'btnProductos
         '
@@ -200,29 +138,52 @@ Partial Class Form1
         Me.btnProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnProductos.ForeColor = System.Drawing.Color.White
-        Me.btnProductos.Image = CType(resources.GetObject("btnProductos.Image"), System.Drawing.Image)
         Me.btnProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnProductos.Location = New System.Drawing.Point(4, 95)
         Me.btnProductos.Name = "btnProductos"
-        Me.btnProductos.Size = New System.Drawing.Size(215, 24)
+        Me.btnProductos.Size = New System.Drawing.Size(167, 24)
         Me.btnProductos.TabIndex = 0
-        Me.btnProductos.Text = "Productos"
+        Me.btnProductos.Text = "Pograma1"
         Me.btnProductos.UseVisualStyleBackColor = True
         '
         'panelForms
         '
         Me.panelForms.BackColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(82, Byte), Integer))
         Me.panelForms.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.panelForms.Location = New System.Drawing.Point(220, 38)
+        Me.panelForms.Location = New System.Drawing.Point(165, 38)
         Me.panelForms.Name = "panelForms"
-        Me.panelForms.Size = New System.Drawing.Size(780, 462)
+        Me.panelForms.Size = New System.Drawing.Size(835, 462)
         Me.panelForms.TabIndex = 2
         '
-        'timerOcultarMenu
+        'Button1
         '
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button1.Location = New System.Drawing.Point(4, 115)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(168, 24)
+        Me.Button1.TabIndex = 7
+        Me.Button1.Text = "Programa2"
+        Me.Button1.UseVisualStyleBackColor = True
         '
-        'timerMostrarMenu
+        'Button2
         '
+        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.ForeColor = System.Drawing.Color.White
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button2.Location = New System.Drawing.Point(4, 134)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(166, 24)
+        Me.Button2.TabIndex = 8
+        Me.Button2.Text = "Programa3"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -254,12 +215,14 @@ Partial Class Form1
     Friend WithEvents btnMinimizar As PictureBox
     Friend WithEvents btnMaximizar As PictureBox
     Friend WithEvents btnProductos As Button
-    Friend WithEvents Panel1 As Panel
     Friend WithEvents timerOcultarMenu As Timer
     Friend WithEvents timerMostrarMenu As Timer
     Friend WithEvents btnMenu As PictureBox
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents btnEmpleados As Button
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents btnClientes As Button
+
+    Private Sub panelMenu_Paint(sender As Object, e As PaintEventArgs) Handles panelMenu.Paint
+
+    End Sub
+
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button1 As Button
 End Class
