@@ -35,8 +35,8 @@ Public Class Form1
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
 
-    Private Sub timerOcultarMenu_Tick(sender As Object, e As EventArgs) Handles timerOcultarMenu.Tick
-        If panelMenu.Width <= 60 Then
+    Private Sub TimerOcultarMenu_Tick(sender As Object, e As EventArgs) Handles timerOcultarMenu.Tick
+        If panelMenu.Width <= 45 Then
             Me.timerOcultarMenu.Enabled = False
         Else
             Me.panelMenu.Width = panelMenu.Width - 20
@@ -44,7 +44,7 @@ Public Class Form1
     End Sub
 
     Private Sub timerMostrarMenu_Tick(sender As Object, e As EventArgs) Handles timerMostrarMenu.Tick
-        If panelMenu.Width >= 210 Then
+        If panelMenu.Width >= 165 Then
             Me.timerMostrarMenu.Enabled = False
         Else
             Me.panelMenu.Width = panelMenu.Width + 20
@@ -52,10 +52,10 @@ Public Class Form1
     End Sub
 
     Private Sub btnMenu_Click(sender As Object, e As EventArgs) Handles btnMenu.Click
-        If panelMenu.Width >= 165 Then
+        If panelMenu.Width = 165 Then
             timerOcultarMenu.Enabled = True
-        ElseIf panelMenu.Width >= 45 Then
-            timerMostrarMenu.Enabled = True
+        ElseIf panelMenu.Width <= 45 Then
+            panelMenu.Enabled = True
         End If
     End Sub
 
@@ -75,4 +75,6 @@ Public Class Form1
     Private Sub btnProductos_Click(sender As Object, e As EventArgs) Handles btnProductos.Click
         abrirFormulario(frmProductos)
     End Sub
+
+
 End Class

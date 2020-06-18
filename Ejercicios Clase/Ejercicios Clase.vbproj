@@ -88,23 +88,23 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="EjerciciosClases\Form1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
+    <Compile Include="EjerciciosClases\Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmArreglosVectores.Designer.vb">
+    <Compile Include="EjerciciosClases\frmArreglosVectores.Designer.vb">
       <DependentUpon>frmArreglosVectores.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmArreglosVectores.vb">
+    <Compile Include="EjerciciosClases\frmArreglosVectores.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProductos.Designer.vb">
+    <Compile Include="EjerciciosClases\frmProductos.Designer.vb">
       <DependentUpon>frmProductos.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmProductos.vb">
+    <Compile Include="EjerciciosClases\frmProductos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -125,13 +125,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="EjerciciosClases\Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmArreglosVectores.resx">
+    <EmbeddedResource Include="EjerciciosClases\frmArreglosVectores.resx">
       <DependentUpon>frmArreglosVectores.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProductos.resx">
+    <EmbeddedResource Include="EjerciciosClases\frmProductos.resx">
       <DependentUpon>frmProductos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -164,6 +164,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EjerciciosTareas\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
