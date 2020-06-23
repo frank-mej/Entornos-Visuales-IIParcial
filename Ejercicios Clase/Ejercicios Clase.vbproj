@@ -101,16 +101,16 @@
     <Compile Include="EjerciciosClases\frmArreglosVectores.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EjerciciosClases\frmLibretaAhorro.Designer.vb">
+      <DependentUpon>frmLibretaAhorro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EjerciciosClases\frmLibretaAhorro.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="EjerciciosClases\frmProductos.Designer.vb">
       <DependentUpon>frmProductos.vb</DependentUpon>
     </Compile>
     <Compile Include="EjerciciosClases\frmProductos.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EjerciciosTareas\Prueba.Designer.vb">
-      <DependentUpon>Prueba.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EjerciciosTareas\Prueba.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -137,11 +137,11 @@
     <EmbeddedResource Include="EjerciciosClases\frmArreglosVectores.resx">
       <DependentUpon>frmArreglosVectores.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EjerciciosClases\frmLibretaAhorro.resx">
+      <DependentUpon>frmLibretaAhorro.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EjerciciosClases\frmProductos.resx">
       <DependentUpon>frmProductos.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EjerciciosTareas\Prueba.resx">
-      <DependentUpon>Prueba.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -174,6 +174,8 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="EjerciciosTareas\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

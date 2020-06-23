@@ -52,10 +52,10 @@ Public Class Form1
     End Sub
 
     Private Sub btnMenu_Click(sender As Object, e As EventArgs) Handles btnMenu.Click
-        If panelMenu.Width = 165 Then
+        If panelMenu.Width >= 100 Then
             timerOcultarMenu.Enabled = True
         ElseIf panelMenu.Width <= 45 Then
-            panelMenu.Enabled = True
+            timerMostrarMenu.Enabled = True
         End If
     End Sub
 
@@ -72,9 +72,12 @@ Public Class Form1
 
     End Sub
 
-    Private Sub btnProductos_Click(sender As Object, e As EventArgs) Handles btnProductos.Click
-        abrirFormulario(frmProductos)
+    Private Sub btnEjerciciosClase_Click(sender As Object, e As EventArgs) Handles btnEjerciciosClase.Click
+        subMenuClase.Visible = True
     End Sub
 
-
+    Private Sub btnProductos_Click(sender As Object, e As EventArgs) Handles btnProductos.Click
+        subMenuClase.Visible = False
+        abrirFormulario(frmArreglosVectores)
+    End Sub
 End Class
