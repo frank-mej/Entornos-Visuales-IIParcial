@@ -2,7 +2,7 @@
     Private monto As Double
     'Procedimientos
     Private Sub activarControles()
-        txtNombre.Enabled = False
+        txtIdentidad.Enabled = False
         txtMonto.Enabled = False
         btnAperturarCuenta.Enabled = False
         btnRetirar.Enabled = True
@@ -10,7 +10,7 @@
     End Sub
 
     Private Sub desactivarControles()
-        txtNombre.Enabled = True
+        txtIdentidad.Enabled = True
         txtMonto.Enabled = True
         btnAperturarCuenta.Enabled = True
         btnRetirar.Enabled = False
@@ -19,7 +19,7 @@
 
     Private Sub limpiar()
         desactivarControles()
-        txtNombre.Clear()
+        txtIdentidad.Clear()
         txtSaldo.Clear()
         txtMonto.Clear()
         lstDepositos.Items.Clear()
@@ -36,7 +36,9 @@
 
     Private Sub btnAperturarCuenta_Click(sender As Object, e As EventArgs) Handles btnAperturarCuenta.Click
         Dim cliente As String
-        cliente = txtNombre.Text
+        If Val(txtIdentidad.Text) <> 208200100471 Then
+            MessageBox.Show("Identidad Incorrecta", "Ingresar cliente correcto", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
         monto = Val(txtMonto.Text)
         If (monto > 0) Then
             activarControles()

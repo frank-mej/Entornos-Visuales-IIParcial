@@ -38,19 +38,19 @@ Partial Class frmArreglosVectores
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.txtMarca = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtModelo = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtPrecio = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.btnBuscar = New System.Windows.Forms.Button()
         Me.txtCantidadCompus = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.btnBuscar = New System.Windows.Forms.Button()
+        Me.txtPrecio = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtModelo = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtMarca = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.btnVender = New System.Windows.Forms.Button()
         Me.txtVender = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.btnVender = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -216,53 +216,14 @@ Partial Class frmArreglosVectores
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Registro"
         '
-        'txtMarca
+        'btnBuscar
         '
-        Me.txtMarca.Location = New System.Drawing.Point(115, 32)
-        Me.txtMarca.Name = "txtMarca"
-        Me.txtMarca.Size = New System.Drawing.Size(100, 20)
-        Me.txtMarca.TabIndex = 1
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(31, 32)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(37, 13)
-        Me.Label3.TabIndex = 0
-        Me.Label3.Text = "Marca"
-        '
-        'txtModelo
-        '
-        Me.txtModelo.Location = New System.Drawing.Point(115, 64)
-        Me.txtModelo.Name = "txtModelo"
-        Me.txtModelo.Size = New System.Drawing.Size(100, 20)
-        Me.txtModelo.TabIndex = 3
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(31, 65)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(42, 13)
-        Me.Label4.TabIndex = 2
-        Me.Label4.Text = "Modelo"
-        '
-        'txtPrecio
-        '
-        Me.txtPrecio.Location = New System.Drawing.Point(115, 96)
-        Me.txtPrecio.Name = "txtPrecio"
-        Me.txtPrecio.Size = New System.Drawing.Size(100, 20)
-        Me.txtPrecio.TabIndex = 5
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(31, 99)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(37, 13)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "Precio"
+        Me.btnBuscar.Location = New System.Drawing.Point(242, 30)
+        Me.btnBuscar.Name = "btnBuscar"
+        Me.btnBuscar.Size = New System.Drawing.Size(75, 23)
+        Me.btnBuscar.TabIndex = 5
+        Me.btnBuscar.Text = "Buscar"
+        Me.btnBuscar.UseVisualStyleBackColor = True
         '
         'txtCantidadCompus
         '
@@ -280,14 +241,53 @@ Partial Class frmArreglosVectores
         Me.Label6.TabIndex = 6
         Me.Label6.Text = "Cantidad"
         '
-        'btnBuscar
+        'txtPrecio
         '
-        Me.btnBuscar.Location = New System.Drawing.Point(242, 30)
-        Me.btnBuscar.Name = "btnBuscar"
-        Me.btnBuscar.Size = New System.Drawing.Size(75, 23)
-        Me.btnBuscar.TabIndex = 5
-        Me.btnBuscar.Text = "Buscar"
-        Me.btnBuscar.UseVisualStyleBackColor = True
+        Me.txtPrecio.Location = New System.Drawing.Point(115, 96)
+        Me.txtPrecio.Name = "txtPrecio"
+        Me.txtPrecio.Size = New System.Drawing.Size(100, 20)
+        Me.txtPrecio.TabIndex = 5
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(31, 99)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(37, 13)
+        Me.Label5.TabIndex = 4
+        Me.Label5.Text = "Precio"
+        '
+        'txtModelo
+        '
+        Me.txtModelo.Location = New System.Drawing.Point(115, 64)
+        Me.txtModelo.Name = "txtModelo"
+        Me.txtModelo.Size = New System.Drawing.Size(100, 20)
+        Me.txtModelo.TabIndex = 3
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(31, 65)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(42, 13)
+        Me.Label4.TabIndex = 2
+        Me.Label4.Text = "Modelo"
+        '
+        'txtMarca
+        '
+        Me.txtMarca.Location = New System.Drawing.Point(115, 32)
+        Me.txtMarca.Name = "txtMarca"
+        Me.txtMarca.Size = New System.Drawing.Size(100, 20)
+        Me.txtMarca.TabIndex = 1
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(31, 32)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(37, 13)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "Marca"
         '
         'GroupBox5
         '
@@ -300,6 +300,15 @@ Partial Class frmArreglosVectores
         Me.GroupBox5.TabIndex = 6
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Registro"
+        '
+        'btnVender
+        '
+        Me.btnVender.Location = New System.Drawing.Point(115, 83)
+        Me.btnVender.Name = "btnVender"
+        Me.btnVender.Size = New System.Drawing.Size(75, 23)
+        Me.btnVender.TabIndex = 6
+        Me.btnVender.Text = "Vender"
+        Me.btnVender.UseVisualStyleBackColor = True
         '
         'txtVender
         '
@@ -317,15 +326,6 @@ Partial Class frmArreglosVectores
         Me.Label8.TabIndex = 0
         Me.Label8.Text = "Cantidad a Vender"
         '
-        'btnVender
-        '
-        Me.btnVender.Location = New System.Drawing.Point(115, 83)
-        Me.btnVender.Name = "btnVender"
-        Me.btnVender.Size = New System.Drawing.Size(75, 23)
-        Me.btnVender.TabIndex = 6
-        Me.btnVender.Text = "Vender"
-        Me.btnVender.UseVisualStyleBackColor = True
-        '
         'frmArreglosVectores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -336,6 +336,7 @@ Partial Class frmArreglosVectores
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmArreglosVectores"
         Me.Text = "frmArreglosVectores"
         Me.GroupBox1.ResumeLayout(False)

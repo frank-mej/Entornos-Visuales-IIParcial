@@ -80,4 +80,18 @@ Public Class Form1
         subMenuClase.Visible = False
         abrirFormulario(frmArreglosVectores)
     End Sub
+
+    Private Sub btnLibretaAhorro_Click(sender As Object, e As EventArgs) Handles btnLibretaAhorro.Click
+        subMenuClase.Visible = False
+        abrirFormulario(frmLibretaAhorro)
+    End Sub
+
+    Private Sub btnBolsaSolidaria_Click(sender As Object, e As EventArgs) Handles btnBolsaSolidaria.Click
+        subMenuTareas.Visible = False
+        abrirFormulario(frmBolsaSolidaria)
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        subMenuTareas.Visible = True
+    End Sub
 End Class

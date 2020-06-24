@@ -31,7 +31,6 @@ Partial Class Form1
         Me.btnCerrar = New System.Windows.Forms.PictureBox()
         Me.panelMenu = New System.Windows.Forms.Panel()
         Me.subMenuTareas = New System.Windows.Forms.Panel()
-        Me.btnPrimerTarea = New System.Windows.Forms.Button()
         Me.subMenuClase = New System.Windows.Forms.Panel()
         Me.btnProductos = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -40,6 +39,8 @@ Partial Class Form1
         Me.panelForms = New System.Windows.Forms.Panel()
         Me.timerOcultarMenu = New System.Windows.Forms.Timer(Me.components)
         Me.timerMostrarMenu = New System.Windows.Forms.Timer(Me.components)
+        Me.btnLibretaAhorro = New System.Windows.Forms.Button()
+        Me.btnBolsaSolidaria = New System.Windows.Forms.Button()
         Me.panelSuperior.SuspendLayout()
         CType(Me.btnRestaurar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnMinimizar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -129,34 +130,20 @@ Partial Class Form1
         '
         'subMenuTareas
         '
-        Me.subMenuTareas.Controls.Add(Me.btnPrimerTarea)
-        Me.subMenuTareas.Location = New System.Drawing.Point(33, 200)
+        Me.subMenuTareas.Controls.Add(Me.btnBolsaSolidaria)
+        Me.subMenuTareas.Location = New System.Drawing.Point(33, 285)
         Me.subMenuTareas.Name = "subMenuTareas"
-        Me.subMenuTareas.Size = New System.Drawing.Size(132, 63)
+        Me.subMenuTareas.Size = New System.Drawing.Size(132, 150)
         Me.subMenuTareas.TabIndex = 10
         Me.subMenuTareas.Visible = False
         '
-        'btnPrimerTarea
-        '
-        Me.btnPrimerTarea.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnPrimerTarea.FlatAppearance.BorderSize = 0
-        Me.btnPrimerTarea.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.btnPrimerTarea.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPrimerTarea.ForeColor = System.Drawing.Color.White
-        Me.btnPrimerTarea.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnPrimerTarea.Location = New System.Drawing.Point(3, 3)
-        Me.btnPrimerTarea.Name = "btnPrimerTarea"
-        Me.btnPrimerTarea.Size = New System.Drawing.Size(129, 23)
-        Me.btnPrimerTarea.TabIndex = 8
-        Me.btnPrimerTarea.Text = "Primer Tarea"
-        Me.btnPrimerTarea.UseVisualStyleBackColor = True
-        '
         'subMenuClase
         '
+        Me.subMenuClase.Controls.Add(Me.btnLibretaAhorro)
         Me.subMenuClase.Controls.Add(Me.btnProductos)
-        Me.subMenuClase.Location = New System.Drawing.Point(33, 112)
+        Me.subMenuClase.Location = New System.Drawing.Point(33, 86)
         Me.subMenuClase.Name = "subMenuClase"
-        Me.subMenuClase.Size = New System.Drawing.Size(132, 63)
+        Me.subMenuClase.Size = New System.Drawing.Size(132, 159)
         Me.subMenuClase.TabIndex = 9
         Me.subMenuClase.Visible = False
         '
@@ -168,7 +155,7 @@ Partial Class Form1
         Me.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnProductos.ForeColor = System.Drawing.Color.White
         Me.btnProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnProductos.Location = New System.Drawing.Point(3, 3)
+        Me.btnProductos.Location = New System.Drawing.Point(3, 4)
         Me.btnProductos.Name = "btnProductos"
         Me.btnProductos.Size = New System.Drawing.Size(129, 23)
         Me.btnProductos.TabIndex = 8
@@ -183,9 +170,9 @@ Partial Class Form1
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(0, 181)
+        Me.Button1.Location = New System.Drawing.Point(3, 265)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(165, 24)
+        Me.Button1.Size = New System.Drawing.Size(162, 24)
         Me.Button1.TabIndex = 7
         Me.Button1.Text = "Ejercicios Tarea"
         Me.Button1.UseVisualStyleBackColor = True
@@ -198,7 +185,7 @@ Partial Class Form1
         Me.btnEjerciciosClase.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEjerciciosClase.ForeColor = System.Drawing.Color.White
         Me.btnEjerciciosClase.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnEjerciciosClase.Location = New System.Drawing.Point(1, 89)
+        Me.btnEjerciciosClase.Location = New System.Drawing.Point(1, 63)
         Me.btnEjerciciosClase.Name = "btnEjerciciosClase"
         Me.btnEjerciciosClase.Size = New System.Drawing.Size(161, 24)
         Me.btnEjerciciosClase.TabIndex = 0
@@ -230,6 +217,36 @@ Partial Class Form1
         '
         'timerMostrarMenu
         '
+        '
+        'btnLibretaAhorro
+        '
+        Me.btnLibretaAhorro.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnLibretaAhorro.FlatAppearance.BorderSize = 0
+        Me.btnLibretaAhorro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.btnLibretaAhorro.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLibretaAhorro.ForeColor = System.Drawing.Color.White
+        Me.btnLibretaAhorro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnLibretaAhorro.Location = New System.Drawing.Point(2, 24)
+        Me.btnLibretaAhorro.Name = "btnLibretaAhorro"
+        Me.btnLibretaAhorro.Size = New System.Drawing.Size(129, 23)
+        Me.btnLibretaAhorro.TabIndex = 9
+        Me.btnLibretaAhorro.Text = "Libreta Ahorro"
+        Me.btnLibretaAhorro.UseVisualStyleBackColor = True
+        '
+        'btnBolsaSolidaria
+        '
+        Me.btnBolsaSolidaria.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBolsaSolidaria.FlatAppearance.BorderSize = 0
+        Me.btnBolsaSolidaria.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.btnBolsaSolidaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBolsaSolidaria.ForeColor = System.Drawing.Color.White
+        Me.btnBolsaSolidaria.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnBolsaSolidaria.Location = New System.Drawing.Point(2, 7)
+        Me.btnBolsaSolidaria.Name = "btnBolsaSolidaria"
+        Me.btnBolsaSolidaria.Size = New System.Drawing.Size(129, 26)
+        Me.btnBolsaSolidaria.TabIndex = 10
+        Me.btnBolsaSolidaria.Text = "Bolsa Solidaria"
+        Me.btnBolsaSolidaria.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -275,5 +292,6 @@ Partial Class Form1
     Friend WithEvents subMenuClase As Panel
     Friend WithEvents btnProductos As Button
     Friend WithEvents subMenuTareas As Panel
-    Friend WithEvents btnPrimerTarea As Button
+    Friend WithEvents btnLibretaAhorro As Button
+    Friend WithEvents btnBolsaSolidaria As Button
 End Class
