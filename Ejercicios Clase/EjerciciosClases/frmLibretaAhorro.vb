@@ -35,7 +35,7 @@
     End Sub
 
     Private Sub btnAperturarCuenta_Click(sender As Object, e As EventArgs) Handles btnAperturarCuenta.Click
-        Dim cliente As String
+        Dim clientes As String
         If Val(txtIdentidad.Text) <> 208200100471 Then
             MessageBox.Show("Identidad Incorrecta", "Ingresar cliente correcto", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If

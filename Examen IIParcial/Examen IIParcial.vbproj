@@ -4,31 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{60C58578-6E6F-4697-AA37-5041FC3EC8D1}</ProjectGuid>
+    <ProjectGuid>{08F65D3E-4305-417C-8675-950563A79275}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Ejercicios_Clase.My.MyApplication</StartupObject>
-    <RootNamespace>Ejercicios_Clase</RootNamespace>
-    <AssemblyName>Ejercicios Clase</AssemblyName>
+    <StartupObject>Examen_IIParcial.My.MyApplication</StartupObject>
+    <RootNamespace>Examen_IIParcial</RootNamespace>
+    <AssemblyName>Examen IIParcial</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -37,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Ejercicios Clase.xml</DocumentationFile>
+    <DocumentationFile>Examen IIParcial.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -47,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Ejercicios Clase.xml</DocumentationFile>
+    <DocumentationFile>Examen IIParcial.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -88,42 +73,30 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EjerciciosClases\conexion.vb" />
-    <Compile Include="EjerciciosClases\Form1.vb">
+    <Compile Include="conexion.vb" />
+    <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EjerciciosClases\Form1.Designer.vb">
+    <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EjerciciosClases\frmArreglosVectores.Designer.vb">
-      <DependentUpon>frmArreglosVectores.vb</DependentUpon>
+    <Compile Include="frmClientes.Designer.vb">
+      <DependentUpon>frmClientes.vb</DependentUpon>
     </Compile>
-    <Compile Include="EjerciciosClases\frmArreglosVectores.vb">
+    <Compile Include="frmClientes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EjerciciosClases\frmBolsaSolidaria.Designer.vb">
-      <DependentUpon>frmBolsaSolidaria.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EjerciciosClases\frmBolsaSolidaria.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EjerciciosClases\frmEstudiante.Designer.vb">
-      <DependentUpon>frmEstudiante.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EjerciciosClases\frmEstudiante.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EjerciciosClases\frmLibretaAhorro.Designer.vb">
-      <DependentUpon>frmLibretaAhorro.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EjerciciosClases\frmLibretaAhorro.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EjerciciosClases\frmProductos.Designer.vb">
+    <Compile Include="frmProductos.Designer.vb">
       <DependentUpon>frmProductos.vb</DependentUpon>
     </Compile>
-    <Compile Include="EjerciciosClases\frmProductos.vb">
+    <Compile Include="frmProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuTienda.Designer.vb">
+      <DependentUpon>MenuTienda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuTienda.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -144,23 +117,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="EjerciciosClases\Form1.resx">
+    <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EjerciciosClases\frmArreglosVectores.resx">
-      <DependentUpon>frmArreglosVectores.vb</DependentUpon>
+    <EmbeddedResource Include="frmClientes.resx">
+      <DependentUpon>frmClientes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EjerciciosClases\frmBolsaSolidaria.resx">
-      <DependentUpon>frmBolsaSolidaria.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EjerciciosClases\frmEstudiante.resx">
-      <DependentUpon>frmEstudiante.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EjerciciosClases\frmLibretaAhorro.resx">
-      <DependentUpon>frmLibretaAhorro.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EjerciciosClases\frmProductos.resx">
+    <EmbeddedResource Include="frmProductos.resx">
       <DependentUpon>frmProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuTienda.resx">
+      <DependentUpon>MenuTienda.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -182,19 +149,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
-      <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="EjerciciosTareas\" />
+    <Content Include="ScripDataBaseTienda.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

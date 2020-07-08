@@ -1,0 +1,61 @@
+﻿create database Tienda
+go
+
+create schema factura
+go
+
+use Tienda
+
+create table factura.cliente (
+	idCliente int primary key not null,
+	nombre varchar(25),
+	apellido varchar(25),
+	direccion varchar(50),
+)
+
+INSERT INTO factura.cliente (idCliente,nombre,apellido,direccion) 
+VALUES('0102', 'Jose Alberto', 'Ramos Flores', 'Barrio la Y'),
+		('0103', 'Carlos Daniel', 'Ramirez Garcia', 'Santa Marta'),
+		('0104', 'Nery Fabricio', 'Pena Orellana', 'Colonia Mata'),
+		('0105', 'Sindy Norey', 'Madrid Barrera', 'Los Salmones'),
+		('0106', 'Sunny Alexandra', 'Acosta Delgado', 'Barrio el centro');
+
+select * from factura.cliente;
+
+create table factura.producto(
+	idProducto int primary key not null,
+	nombreProducto varchar(40),
+	descripcion varchar(50)
+)
+
+INSERT INTO factura.producto (idProducto,nombreProducto,descripcion) 
+VALUES('01', 'Camiseta', 'Coello V size S'),
+		('02', 'Buso', 'Talla M color negro'),
+		('03', 'Gorra', 'Marca Nike, Color Blanco'),
+		('04', 'Calsetas', 'Color negro'),
+		('05', 'Sudadera', 'Coello redondo color rojo');
+
+select * from factura.producto;
+
+create table factura.Venta(
+	idVenta int primary key not null,
+	fechaVenta varchar(15),
+	precio int,
+	cantidad int,
+	idCliente int foreign key references factura.cliente(idCliente),
+	idProducto int foreign key references factura.producto(idProducto)
+)
+
+select ve.idVenta, ve.fechaVenta, ve.precio, ve.cantidad, pro.nombreProducto, pro.descripcion, cli.nombre, cli.apellido, cli.direccion from factura.Venta as ve
+inner join factura.producto as pro 
+on ve.idproducto = pro.idProducto
+inner join factura.cliente as cli
+on cli.idCliente = ve.idCliente
+
+INSERT INTO factura.Venta(idVenta, fechaVenta, precio, cantidad, idCliente, idProducto) 
+VALUES('232', '07/23/2020', '25', '1', '0102', '01'),
+		('233', '07/24/2020', '20', '5', '0103', '02'),
+		('234', '05/25/2020', '35', '11', '0104', '03'),
+		('235', '03/26/2020', '40', '4', '0105', '04');
+
+select * from factura.Venta;
