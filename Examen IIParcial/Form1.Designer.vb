@@ -46,6 +46,7 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ErrorValidacion = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
+        Me.txtFecha = New System.Windows.Forms.TextBox()
         CType(Me.dtgVentas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -131,6 +132,7 @@ Partial Class Form1
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.txtFecha)
         Me.GroupBox1.Controls.Add(Me.mskFecha)
         Me.GroupBox1.Controls.Add(Me.txtCodigoProducto)
         Me.GroupBox1.Controls.Add(Me.Label9)
@@ -152,7 +154,7 @@ Partial Class Form1
         '
         'mskFecha
         '
-        Me.mskFecha.Location = New System.Drawing.Point(105, 61)
+        Me.mskFecha.Location = New System.Drawing.Point(105, 47)
         Me.mskFecha.Mask = "00/00/0000"
         Me.mskFecha.Name = "mskFecha"
         Me.mskFecha.Size = New System.Drawing.Size(100, 20)
@@ -252,6 +254,13 @@ Partial Class Form1
         '
         Me.ErrorValidacion.ContainerControl = Me
         '
+        'txtFecha
+        '
+        Me.txtFecha.Location = New System.Drawing.Point(105, 74)
+        Me.txtFecha.Name = "txtFecha"
+        Me.txtFecha.Size = New System.Drawing.Size(100, 20)
+        Me.txtFecha.TabIndex = 21
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -295,4 +304,5 @@ Partial Class Form1
     Friend WithEvents mskFecha As MaskedTextBox
     Friend WithEvents ToolTip As ToolTip
     Friend WithEvents btnValidarVenta As Button
+    Friend WithEvents txtFecha As TextBox
 End Class
